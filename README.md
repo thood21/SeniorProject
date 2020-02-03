@@ -19,8 +19,8 @@ Before beginning, there is some mandatory set up. While the Coral online documen
 9. A serial console application or utility - *I use PuTTY, which is free to download*
 10. (OPTIONAL) a micro-sd card - *this would enable a larger storage capacity for the dev board which might be important depending on what your use case is (ie: analyzing large datasets of images, installing large libraries and modules, etc.)*
 
-When it's all said and done, you should have downloaded the USB-to-UART drivers, FastBoot drivers, and have an equipment setup [similar to this](https://github.com/thood21/SeniorProject/blob/master/etc/equipment.PNG "Required Equipment").
+When it's all said and done, you should have downloaded the USB-to-UART drivers, FastBoot drivers, and have an equipment setup [similar to this](https://github.com/thood21/SeniorProject/blob/master/etc/equipment.PNG "Required Equipment") *minus the Raspberry Pi*.
 Additionally, please find helpful links, sources, and documentation that I used along my process below:
 1. Coral Dev Board [official documentation](https://coral.ai/docs/dev-board/get-started/)
-2. Online blog for [connecting a Coral Dev Board to a Windows 10 machine](https://blog.questionable.services/article/coral-edge-tpu-windows/)
+2. Online blog for [connecting a Coral Dev Board to a Windows 10 machine](https://blog.questionable.services/article/coral-edge-tpu-windows/) - If you are confident in your own ability to troubleshoot and want to go at your own pace, this guide is all you need really, and you can ignore the rest of my guide. In essence, I am rehashing this guide and adding in a few steps that worked in my case.
 3. Troubleshooting post from StackOverflow - [FastBoot errors](https://stackoverflow.com/questions/57776655/fastboot-devices-not-listing-coral-dev-board)
