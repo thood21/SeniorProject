@@ -9,7 +9,7 @@ Senior Project using coral dev board and TensorFlow
 
 ### Set up
 Before beginning, there is some mandatory set up. While the Coral online documentation recommends using MacOS or Linux for this process, I configured this to work for Windows 10 machines, since that is the OS most students will use. Please ensure you have the following:
-1. Computer running Windows 10 - *Laptop would be ideal*
+1. Computer running Windows 10 - *laptop would be ideal*
 2. The Coral Dev Board kit - *if you are getting this from Dr. Anwar, it should be just the board with nothing else additional*
 3. x1 USB-C power delivery cable w/ 5w power brick - *an Android USB-C charger will probably work*
 4. x1 USB-C data delivery cable - *yes, you need two distinct USB-C cables*
