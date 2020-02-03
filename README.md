@@ -18,6 +18,7 @@ Before beginning, there is some mandatory set up. While the Coral online documen
 7. Download and unzip [this folder](https://developer.android.com/studio/releases/platform-tools.html#download), place it somewhere convenient for you, and then store that file path location in your Environment and/or System PATH variable(s). For example, I unzipped the folder and placed it in my Program Files folder, so I added the following to my System Variables PATH: `C:\Program Files\platform-tools_r29.0.5-windows\platform-tools`
 9. A serial console application or utility - I use PuTTY, which is free to download
 
+When it's all said and done, you should have downloaded the USB-to-UART drivers, FastBoot drivers, and have an equipment setup [similar to this](https://github.com/trhood21/SeniorProject/etc/equipment.png "Required Equipment").
 Additionally, please find helpful links, sources, and documentation that I used along my process below:
 1. Coral Dev Board [official documentation](https://coral.ai/docs/dev-board/get-started/)
 2. Online blog for [connecting a Coral Dev Board to a Windows 10 machine](https://blog.questionable.services/article/coral-edge-tpu-windows/)
