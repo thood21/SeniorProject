@@ -25,7 +25,7 @@ Additionally, please find helpful links, sources, and documentation that I used 
 2. Online blog for [connecting a Coral Dev Board to a Windows 10 machine](https://blog.questionable.services/article/coral-edge-tpu-windows/) - If you are confident in your own ability to troubleshoot and want to go at your own pace, this guide is all you need really, and you can ignore the rest of my guide. In essence, I am rehashing this guide and adding in a few steps that worked in my case.
 3. Troubleshooting post from StackOverflow - [FastBoot errors](https://stackoverflow.com/questions/57776655/fastboot-devices-not-listing-coral-dev-board)
 
-###Running a demo
+### Running a demo
 Next, we will quickly run a demo that showcases what the Coral Dev Board is capable of. Before running, we will want to install a few more packages and ensure we are connected to the internet (while these are not needed to run the demo, these will be needed later on down the line).
 1. At this point you are not able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitory and a usb hub to connect a mouse and keyboard. Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner. 
 2. Open a terminal and run the command `nmtui` to bring up the connection manager interface. Use the keyboard to navigate through, and add a connection. You can use either ethernet or Wi-Fi, but note that because this device lacks a browser, you will not be able to use networks that require a sign-in to access the internet.
