@@ -1,11 +1,41 @@
 # SeniorProject
-Senior Project using coral dev board and TensorFlow
+Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and emotion recognition and detection.
 
-## About Me
+## Information
+All pre-requisites and prior information needed will be detailed in the below sections.
+
+### About Me
 * Name: Tom Hood
 * Majors: Applied Mathematics & Computer Science
-* Minors: Data Analytics
+    * Minors: Data Analytics
 * Semester: Spring 2020
+
+### Goals of Project
+This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time human pose and emotion recognition. The Coral Dev Board will be using an attached camera to stream in video data and use real-time analytics to estimate and gauge poses and emotion.
+
+### Annotated Bibliography
+Before beginning this project, I sought out sources that did similar projects, used similar methodologies, or used similar hardware. The purpose of this is to aggregate information from disparate sources to synthesize a blend of information into a single source to serve as a guide for future users.
+
+1. _Aloufi, Ranya, Hamed Haddadi and David Boyle. "Emotion Filtering at the Edge." Association for Computing Machinery (2019): 1-6. Digital Article._
+    * details here
+    
+2. _Antonini, Mattia, et al. "Resource Characterisation of Personal-Scale Sensing Models on Edge Accelerators." Association for Computing Machinery (2019): 49-55. Digital Article._
+    * details here
+    
+3. _Coral. "Dev Board Datasheet." January 2020. Coral AI Docs. System Report. January 2020._
+    * details here
+
+4. _Ding, Changxing and Dacheng Tao. "A Comprehensive Survey on Pose-Invariant Face Recognition." Association for Computing Machinery (2016): Article 37. Digital Article._
+    * This article studies facial recognition with unchanging (invariant) poses; this translates to analyzing still images of human faces. This type of human facial recognition is useful in certain applications such as facial biometrics recognition, but useless in others such as real-time facial recognition. Pose invariant facial recognition (PIFR) is typically grouped into four distinct categories: pose-robust feature extraction approaches, multiview subspace learning approaches, face synthesis approaches, and hybrid approaches. This article discusses the motivations, strategies, pros/cons, and performance of representative approaches and details directions for future research. Ultimately, the capacity to recognize faces under varied poses is a fundamental human ability that presents a unique challenge for computer vision systems, which spurred this group of researches to delve into a separate area of study - PIFR. 
+
+5. _Kejariwal, Arun, Sanjeev Kulkarni and Karthik Ramasamy. "Real Time Analytics: Algorithms and Systems." Association for Computing Machinery (2015): 2040–2041. Digital Article._
+    *  This article outlines example use cases of streaming analytics and notes how it powers a lot of the everyday functions we do/use. Business metrics, healthcare reports, e-commerce tracking, telecommunications, government services, and more all utilize streaming analytics. This article also presents a various applications, algorithms, and platforms for streaming analytics, as well as the evolution of the field and current challenges. Common challenges include turnover time between capture data and presenting it in analytics, efficiently handling and streaming massive amounts of data ("Big Data"), maintaining data quality standards, and making use of data you collect (otherwise, why waste resources storing useless data). In essence, the article examines the implications and effects of the "3 V's" of daya analytics - Velocity/Veracity, Volume, and Variety.
+
+6. _Aloufi, Ranya, Hamed Haddadi and David Boyle. "Emotion Filtering at the Edge." Association for Computing Machinery (2019): 1-6. Digital Article._
+    * This article outlines the implementation and evaluation of emotion filtering using a Raspberry Pi 4. Because the Raspberry Pi is used as a sensor to collect data and also analyze it, it is an edge analytics device. Edge analytics has gained immense popularity recently, fueling a wave of real-time analytics as devices are able to now sensor/poll external stimuli and immediately analyze it and output results or reactions. Filtering human emotions at the edge involves devices that are able to detect changes on hosts and analyze minute changes and chain these changes together into an ultimately change in emotion. Small actions such as wrinkles around the mouth, angling of eye brows, open eye width, voice pitch, decible levels, and hesitation are a few of the many changes used to diagnose emotion. In the pursuit of creating AI, human emotion detection is a necessity, making this research an important cornerstone. Finally, this article shows that performance accuracy is not hindered by edge analytics when compared to more powerful cloud-based approaches. Traditional systems stream data back from sensors and analyze data in the cloud, which is less efficient and sometimes slower. In essence, this article demonstrates the capabilities and accuracy of edge analytics, while also pressing forward by making advances for human emotion detection. 
+    
+## Process
+Below I will outline steps and tutorials for set up, running a demo, and then my own process for real-time edge analytics for human pose recognition and emotion detection.
 
 ### Set up
 Before beginning, there is some mandatory set up. While the Coral online documentation recommends using MacOS or Linux for this process, I configured this to work for Windows 10 machines, since that is the OS most students will use. Please ensure you have the following:
