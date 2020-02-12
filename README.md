@@ -1,4 +1,4 @@
-# Senior Project: Real-time Edge Analytics on Human Pose and Emotion
+# Senior Project: Coral Dev Board Real-time Edge Analytics of Human Pose and Emotion
 Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and emotion recognition and detection.
 
 ## Information
