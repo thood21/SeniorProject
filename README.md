@@ -49,6 +49,7 @@ Before beginning, there is some mandatory set up. While the Coral online documen
 9. A serial console application or utility - *I use PuTTY, which is free to download*
 10. (OPTIONAL) a micro-sd card - *this would enable a larger storage capacity for the dev board which might be important depending on what your use case is (ie: analyzing large datasets of images, installing large libraries and modules, etc.)*
 
+#### Recap & Troubleshooting
 When it's all said and done, you should have downloaded the USB-to-UART drivers, FastBoot drivers, and have an equipment setup [similar to this](https://github.com/thood21/SeniorProject/blob/master/etc/equipment.PNG "Required Equipment") *minus the Raspberry Pi*.
 Additionally, please find helpful links, sources, and documentation that I used along my process below:
 1. Coral Dev Board [official documentation](https://coral.ai/docs/dev-board/get-started/)
@@ -57,7 +58,7 @@ Additionally, please find helpful links, sources, and documentation that I used 
 
 ### Running a demo
 Next, we will quickly run a demo that showcases what the Coral Dev Board is capable of. Before running, we will want to install a few more packages and ensure we are connected to the internet (while these are not needed to run the demo, these will be needed later on down the line).
-1. At this point you are not able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitory and a usb hub to connect a mouse and keyboard. Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner. 
+1. At this point you are now able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitor, and find a USB hub as well to connect a mouse, keyboard, and other USB devices (flashdrives, webcams, etc.). Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner.
 2. Open a terminal and run the command `nmtui` to bring up the connection manager interface. Use the keyboard to navigate through, and add a connection. You can use either ethernet or Wi-Fi, but note that because this device lacks a browser, you will not be able to use networks that require a sign-in to access the internet.
 3. To ensure you have established a connection, run `nmcli connection show`, which should show the Name, UUID, and Device for your active connections. Wi-Fi will display `wlan0` under Device, while ethernet should show `eth0`.
 4. Update the software by running `sudo apt-get update`, and after this finishes, run `sudo apt-get dist-upgrade`
