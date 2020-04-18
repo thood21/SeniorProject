@@ -82,3 +82,6 @@ With the setup finished, we are now ready to run the demo. Ensure you are connec
       - It is possible to stream the demo over SSH, however I did not do that so I won't be giving instruction on how to do that (instructions are shown on the Coral Dev Board Online documentation). 
    - A video should now display on your screen showing cars driving on a highway. This is demonstrating a model that is attempting to identify cars, with a given percentage showing the "confidence" in classifying the object as a car.
       - You will notice that typically as cars get closer to the camera the accuracy in prediction increases.
+
+## Return to Root
+You can return to the senior project root directory [here](https://github.com/thood21/SeniorProject)
