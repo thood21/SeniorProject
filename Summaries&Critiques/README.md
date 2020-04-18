@@ -11,3 +11,6 @@ Going through this project, I refered to several sources for additional help. Th
 3. _Allan, Alasdair. Hands on with the Coral Dev Board. 26 March 2019. Digital Blog._
    
    This source is authored by the same individual who authored the first source, however in this piece he is going over the unboxing, setup, and hands on experience with the Coral Dev Board. Just like last time, the author provides a wealth of photos for users to easily follow along. In addition, the user offers some troubleshooting, mentioning that the Coral Dev Board kit does not include all the required accessories, and he explains in detail what other tools are needed to get everything up and running. I noticed as well the author encounters a common issue after flashing Mendel Linux on to the board - the fans will stop spinning, causing the board to quickly heat up and potentially thermal throttle. While he does not offer any solutions, I do note this error and offer my own solution in my guide below. The biggest takeaway for me is to focus on creating good documentation that assists future users - this includes double checking grammar and syntax, taking clear and concise images, thoroughly outline process and steps, and providing URLs and code when needed.
+
+## Return to Root
+You can return to the senior project root directory [here](https://github.com/thood21/SeniorProject)
