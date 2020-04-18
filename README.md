@@ -1,5 +1,5 @@
-# Senior Project: Coral Dev Board Real-time Edge Analytics of Human Pose and Emotion
-Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and emotion recognition and detection.
+# Senior Project: Coral Dev Board Real-time Edge Analytics of Human Pose and Face
+Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and face recognition and detection.
 
 ## Information
 All pre-requisites and prior information needed will be detailed in the below sections.
@@ -11,7 +11,7 @@ All pre-requisites and prior information needed will be detailed in the below se
 * Semester: Spring 2020
 
 ### Goals of Project
-This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time human pose and emotion recognition. The Coral Dev Board will be using an attached camera to stream in video data and use real-time analytics to estimate and gauge poses and emotion. Because this device is both sensing/collecting and analyzing data it is considered an edge analytics device. 
+This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time human pose and face recognition. The Coral Dev Board will be using an attached camera to stream in video data and use real-time analytics to estimate and gauge poses and faces. Because this device is both sensing/collecting and analyzing data it is considered an edge analytics device. 
 
 ### Summaries & Critiques
 Going through this project, I refered to several sources for additional help. These sources were all digital, most of them blogs, recounting similar experiments using a Coral Dev Board. Below I outline these sources and offer some criticism; ideally the guide I have created below will serve as a more well-rounded and hollistic source of information for future researchers and users.
@@ -76,7 +76,11 @@ Additionally, please find helpful links, sources, and documentation that I used 
 3. Troubleshooting post from StackOverflow - [FastBoot errors](https://stackoverflow.com/questions/57776655/fastboot-devices-not-listing-coral-dev-board)
 
 ### Running a demo
-Next, we will quickly run a demo that showcases what the Coral Dev Board is capable of. Before running, we will want to install a few more packages and ensure we are connected to the internet (while these are not needed to run the demo, these will be needed later on down the line).
+Next, we will quickly run a demo that showcases what the Coral Dev Board is capable of. 
+
+#### Setup
+Before running, we will want to install a few more packages and ensure we are connected to the internet. This is also a good time to grab all peripherals you will need to operate the Coral Dev Board.
+
 1. At this point you are now able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitor, and find a USB hub as well to connect a mouse, keyboard, and other USB devices (flashdrives, webcams, etc.). Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner.
 2. Open a terminal and run the command `nmtui` to bring up the connection manager interface. Use the keyboard to navigate through, and add a connection. You can use either ethernet or Wi-Fi, but note that because this device lacks a browser, you will not be able to use networks that require a sign-in to access the internet.
 3. To ensure you have established a connection, run `nmcli connection show`, which should show the Name, UUID, and Device for your active connections. Wi-Fi will display `wlan0` under Device, while ethernet should show `eth0`.
@@ -84,3 +88,13 @@ Next, we will quickly run a demo that showcases what the Coral Dev Board is capa
 5. Now we want to install [TensorFlow lite for Python](https://www.tensorflow.org/lite/guide/python). I encountered some issues here, however it could have been from typos as there is no efficient way to copy/paste URLs to/from the Coral Dev Board. First, ensure you have Python3 install by running `python3 -V`. This is going to print out the version number of your Python3 distribution; it is crucial that you use the correct version number when downloading the TensorFlow Lite package. My version number is 3.5.3, so I will be running the command for 3.5.xxx. If you are encountering errors, ensure you are typing the command in correctly. If this does not work, try going [here](https://github.com/tensorflow/tensorflow/issues/9722) and reading through similar issues - notably, try this command: `python3 -c "import wheel.pep425tags as w; print(w.get_supported())" | sed -zE 's/\),/),\n/g'`, which should print out your supported .whl types. 
 6. One last thing we want to change is the fan control. If your experience is similar to mine, the fan is not spinning, causing the heatsink to get very hot, ultimately leading to thermal throttling. To remedy this, we will be editting a variable hidden deep within /sys. Begin by entering `sudo nano ~/.bashrc`, which opens your bashrc file, which we can use to load variables into the shell environment each time it is launched - this is crucial because instead of using `cd my/really/long/path/to/file/here`, we can just reference a variable to pull it up instantly. Right under #for examples in the the bashrc, make a few new lines and enter in `export fan="/sys/class/thermal/thermal_zone0/trip_point_4_temp"` then press ctrl+O, enter, ctrl+X, then in your terminal enter command: `source ~/.bashrc` which refreshes your bashrc file. To ensure this worked, enter `echo $fan`, which should print out that path we just stored in the bashrc. Now enter command: `sudo nano $fan`, which pulls up a file with a number in it - mine shows 65000. Change this to a much smaller number - I always do 5000, then ctrl+O, enter, ctrl+X. Your fan should kick on. This fix is not persistent after reboots, meaning when your machine turns off this change is lost, so you will want to rerun the `sudo nano $fan` command and change the number each time after reboot. 
 7. Now we can run our demo. Assumming you are connected to a monitor, from your terminal run command: `edgetpu_demo --device`. It is possible to stream the demo over SSH, however I did not do that so I won't be giving instruction on how to do that (instructions are shown on the Coral Dev Board Online documentation). A video should now display on your screen showing cars driving on a highway. This is demonstrating a model that is attempting to identify cars, with a given percentage showing the "confidence" in classifying the object as a car.
+
+## My Project
+The below sections are pertinent to my own senior project, which is using the Coral Dev Board and TensorFlow lite to run software to detect human pose and faces
+
+### Facial Recognition
+Facial recognition is an increasingly popular use case for machine learning. Many sophisticated security systems use facial detection software to identity humans who may be committing a crime or other offense. New advancements in artificial intelligence are trying to incorporate facial recognition into their robots to increase their capabilities for communicating with humans. Facial recognition lays the foundations for more advanced actions such as emotion detection, eye-contact, and facing active speakers. 
+
+#### Setup
+I 
+
