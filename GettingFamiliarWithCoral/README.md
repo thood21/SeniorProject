@@ -32,7 +32,7 @@ Before beginning, there is some mandatory software you will need to download on 
 1. Checklist - When it's all said and done, you should have:
    - Downloaded the USB-to-UART drivers on your laptop
    - Downloaded the FastBoot drivers on your laptop
-   - Have an equipment setup [similar to this](https://github.com/thood21/SeniorProject/blob/master/etc/equipment.PNG "Required Equipment") *minus the Raspberry Pi*.
+   - Have an equipment setup [similar to this](https://github.com/thood21/SeniorProject/blob/master/etc/equipment1.PNG "Required Equipment") *minus the Raspberry Pi*.
 
 #### Troubleshooting
 Additionally, please find helpful links, sources, and documentation that I used along my process below:
