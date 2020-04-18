@@ -18,3 +18,6 @@ Before beginning this project, I sought out sources that did similar projects, u
 
 6. _Shotton, Jamie, et al. "Real-Time Human Pose Recognition in Parts from Single Depth Images." Association for Computing Machinery (2013): 116-124. Digital Article._
     * This article outlines research methods used to report real-time human pose recognition via prediction from 3D positioning of body parts and joints obtained from single depth images. While this methodology discussed is strongly remeniscent of current object recognition strategies, it does differentiate itself by utilizing an algorithm that does not depend on information from preceding image frame data. The proposed methodology breaks down images into recognizable body parts and then further into pixels, enabling per-pixel machine learning techniques to efficiently analyze data. The algorithm is able to estimate body part labels invariant to pose, body shape, clothing, and other irrelevancies. The proposed system runs in uner 5ms on the Xbox 360 (system configuration used for specific benchmarking purposes). 
+
+## Return to Root
+You can return to the senior project root directory [here](https://github.com/thood21/SeniorProject)
