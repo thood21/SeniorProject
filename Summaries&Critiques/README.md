@@ -1,19 +1,4 @@
-# Senior Project: Coral Dev Board Real-time Edge Analytics of Human Pose and Face
-Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and face recognition and detection.
-
-## Information
-All pre-requisites and prior information needed will be detailed in the below sections.
-
-### About Me
-* Name: Tom Hood
-* Majors: Applied Mathematics & Computer Science
-    * Minors: Data Analytics
-* Semester: Spring 2020
-
-### Goals of Project
-This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time human pose and face recognition. The Coral Dev Board will be using an attached camera to stream in video data and use real-time analytics to estimate and gauge poses and faces. Because this device is both sensing/collecting and analyzing data it is considered an edge analytics device. 
-
-### Summaries & Critiques
+# Summaries & Critiques
 Going through this project, I refered to several sources for additional help. These sources were all digital, most of them blogs, recounting similar experiments using a Coral Dev Board. Below I outline these sources and offer some criticism; ideally the guide I have created below will serve as a more well-rounded and hollistic source of information for future researchers and users.
 
 1. _Allan, Alasdair. How to use a Raspberry Pi to flash new firmware onto the Coral Dev Board. 26 March 2019. Digital Blog._
