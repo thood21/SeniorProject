@@ -56,7 +56,7 @@ Before running, we will want to install a few more packages and ensure we are co
 
 1. Establish setup:
    - At this point you are now able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitor, and find a USB hub as well to connect a mouse, keyboard, and other USB devices (flashdrives, webcams, etc.). I personally used a wired USB keyboard, wireless 2.4ghz USB mouse, USB camera, USB hub, and USB C power supply, which is all shown running below:
-   - ![](../etc/41D3525E-26CE-4CEF-BEB8-F011276DE88E.jpeg)
+   ![](../etc/41D3525E-26CE-4CEF-BEB8-F011276DE88E.jpeg)
 2. Power on system
    - Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner.
 3. Setup network for internet access:
