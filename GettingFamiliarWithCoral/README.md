@@ -21,7 +21,7 @@ Before beginning, there is some mandatory software you will need to download on 
    - ![](../etc/androidstudio_drivers.PNG)
    - After unzipping the folder in your chosen directory, store that file path location in your Environment and/or System PATH variable(s). 
       - For example, I unzipped the folder and placed it in my Program Files folder, so I added the following to my System Variables PATH: `C:\Program Files\platform-tools_r29.0.5-windows\platform-tools`
-      - ![](../etc/add_path.png)
+      ![](../etc/add_path.png)
 5. Download a Serial Console Application for your Laptop
    - Mac systems have `screen` installed by default, but *I use PuTTY, which is free to download*
    - ![](../etc/putty.PNG)
