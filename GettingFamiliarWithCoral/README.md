@@ -5,7 +5,7 @@ Before diving in with the Coral Dev Board, I will first outline a short guide fo
 Before beginning, there is some mandatory software you will need to download on your laptop. While the Coral online documentation recommends using MacOS or Linux for this process, I configured this to work for Windows 10 machines, since that is the OS most students will use. Please ensure you have the following:
 1. Computer running Windows 10 - *laptop would be ideal*
 2. The Coral Dev Board Kit and needed peripherals:
-![](../etc/8AEF211C-AE59-44E3-A0BF-6CF5A866C8A8.jpeg)
+![](../etc/equipment2.jpeg)
    - The Coral Dev Board kit - *if you are getting this from Dr. Anwar, it should be just the board with nothing else additional*
    - x1 USB-C power delivery cable w/ 5w power brick - *an Android USB-C charger will probably work, this is used to power the Coral Dev Board, be careful not to use a power source that delivers more than 5w as you can damage the board*
    - x1 USB-C data delivery cable - *yes, you need two distinct USB-C cables, another Android USB-C charger will probably work, this is used to flash Linux onto the Coral Dev Board*
@@ -56,7 +56,7 @@ Before running, we will want to install a few more packages and ensure we are co
 
 1. Establish setup:
    - At this point you are now able to use the Coral Dev Board like a portable computer, so use an HDMI to connect to an external monitor, and find a USB hub as well to connect a mouse, keyboard, and other USB devices (flashdrives, webcams, etc.). I personally used a wired USB keyboard, wireless 2.4ghz USB mouse, USB camera, USB hub, and USB C power supply, which is all shown running below:
-   ![](../etc/41D3525E-26CE-4CEF-BEB8-F011276DE88E.jpeg)
+   ![](../etc/setup.jpeg)
 2. Power on system
    - Once all accessories are connected, plug in your power cable and you should see a boot screen, followed by a blue-ish ocean desktop background. Only the terminal is able to be opened, which is located in the top-left corner.
 3. Setup network for internet access:
