@@ -18,10 +18,10 @@ Below is a list of other documents that are to be included in the final project/
 * Summaries & Critiques
    * You can find the *Summaries & Critiques* [here](https://github.com/thood21/SeniorProject/tree/master/Summaries%26Critiques)
 * Annotated Bibliography
-   * You can find the *Annotated Bibliography* [here]https://github.com/thood21/SeniorProject/tree/master/AnnotatedBibliography
+   * You can find the *Annotated Bibliography* [here](https://github.com/thood21/SeniorProject/tree/master/AnnotatedBibliography)
 * Getting Familiar with the Coral Dev Board
    * This is useful for those who have never worked with the Coral Dev Board before. This includes a guide for setting up and running a demo.
-   * You can find the documentation [here](https://github.com/thood21/SeniorProject/tree/master/GettingFamiliarWithCoral)
+   * You can find the *documentation* [here](https://github.com/thood21/SeniorProject/tree/master/GettingFamiliarWithCoral)
    
 ## My Project
 The below sections are pertinent to my own senior project, which is using the Coral Dev Board and TensorFlow lite to run software to detect human pose and faces
