@@ -14,11 +14,11 @@ Before beginning, there is some mandatory software you will need to download on 
 3. Download and install SILABS drivers:
    - On your laptop, download and install [these drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
       - These are required to enable your computer's USB port to function as a Virtual COM Port to facilitate host communication between your computer and the Dev Board
-   - ![](../etc/uart_drivers.PNG)
+   ![](../etc/uart_drivers.PNG)
 4. Download and Install Android Platform Tools:
    - On your laptop, download and unzip [this folder](https://developer.android.com/studio/releases/platform-tools.html#download)
       - Place it somewhere convenient for you - **you will need to reference this spot later!**
-   - ![](../etc/androidstudio_drivers.PNG)
+   ![](../etc/androidstudio_drivers.PNG)
    - After unzipping the folder in your chosen directory, store that file path location in your Environment and/or System PATH variable(s). 
       - For example, I unzipped the folder and placed it in my Program Files folder, so I added the following to my System Variables PATH: `C:\Program Files\platform-tools_r29.0.5-windows\platform-tools`
       ![](../etc/add_path.png)
