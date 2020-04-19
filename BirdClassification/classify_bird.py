@@ -1,48 +1,22 @@
-# Lint as: python3
-# Copyright 2019 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     https://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-r"""Example using TF Lite to classify a given image using an Edge TPU.
+#Bird Classification Script
 
-   To run this code, you must attach an Edge TPU attached to the host and
-   install the Edge TPU runtime (`libedgetpu.so`) and `tflite_runtime`. For
-   device setup instructions, see g.co/coral/setup.
 
-   Example usage (use `install_requirements.sh` to get these files):
-   ```
-   python3 classify_image.py \
-     --model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite  \
-     --labels models/inat_bird_labels.txt \
-     --input images/parrot.jpg
-   ```
-"""
-
+#Import libraries
 import argparse
 import time
-
 from PIL import Image
-
 import classify
 import tflite_runtime.interpreter as tflite
 import platform
 
+#EdgeTPU libraries
 EDGETPU_SHARED_LIB = {
   'Linux': 'libedgetpu.so.1',
   'Darwin': 'libedgetpu.1.dylib',
   'Windows': 'edgetpu.dll'
 }[platform.system()]
 
-
+#Used for parsing and accepting arguments
 def load_labels(path, encoding='utf-8'):
   """Loads labels from file (with or without index numbers).
 
@@ -63,7 +37,7 @@ def load_labels(path, encoding='utf-8'):
     else:
       return {index: line.strip() for index, line in enumerate(lines)}
 
-
+#Takes a model file and creates an interpreter
 def make_interpreter(model_file):
   model_file, *device = model_file.split('@')
   return tflite.Interpreter(
@@ -73,7 +47,7 @@ def make_interpreter(model_file):
                                {'device': device[0]} if device else {})
       ])
 
-
+#Main function
 def main():
   parser = argparse.ArgumentParser(
       formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -117,6 +91,6 @@ def main():
   for klass in classes:
     print('%s: %.5f' % (labels.get(klass.id, klass.id), klass.score))
 
-
+#Used for scripting - calls main function at start
 if __name__ == '__main__':
   main()
