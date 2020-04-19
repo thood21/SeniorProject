@@ -49,7 +49,7 @@ Before I began working on the code for facial recognition, I wanted to begin wit
    ![](etc/parrot.png)
    - I then called my script to begin classifying the image. The script takes in 3 arguments: `model`, `labels`, and `input`.
    ![](etc/script_call.png)
-   - The results from the classification were a successful. The model correctly identified the bird.
+   - The results from the classification were a successful. The model correctly identified the bird with over 75% accuracy!
    ![](etc/model_results.png)
 
 
