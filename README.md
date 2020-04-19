@@ -44,7 +44,7 @@ Before I began working on the code for facial recognition, I wanted to begin wit
    - Using the API, I developed a model that could classify various birds.
 4. My bird model
    - The code for my model is contained in `classify_bird.py`
-      - You can view the code [here](https://github.com/thood21/SeniorProject/BirdClassification/classify_bird.py)
+      - You can view the code [here](https://github.com/thood21/SeniorProject/BirdClassification/classify_bird.py )
    - I began with an input image of a parrot, specifically a Scarlet Macaw.
    ![](etc/parrot.png)
    - I then called my script to begin classifying the image. The script takes in 3 arguments: `model`, `labels`, and `input`.
