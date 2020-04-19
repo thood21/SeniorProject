@@ -26,9 +26,6 @@ Below is a list of other documents that are to be included in the final project/
 ## My Project
 The below sections are pertinent to my own senior project, which is using the Coral Dev Board and TensorFlow lite to run software to detect human pose and faces
 
-### Facial Recognition
-Facial recognition is an increasingly popular use case for machine learning. Many sophisticated security systems use facial detection software to identity humans who may be committing a crime or other offense. New advancements in artificial intelligence are trying to incorporate facial recognition into their robots to increase their capabilities for communicating with humans. Facial recognition lays the foundations for more advanced actions such as emotion detection, eye-contact, and facing active speakers. 
-
 #### Warm-Up: Image Processing
 Before I began working on the code for facial recognition, I wanted to begin with a more basic form of image processing and recognition. I found a guide to help me build a model for classifying birds using the Coral Dev Board and TensorFlow lite Python API. My process is outlined below:
 
@@ -53,3 +50,25 @@ Before I began working on the code for facial recognition, I wanted to begin wit
    ![](etc/model_results.png)
 
 
+### Facial Recognition
+Facial recognition is an increasingly popular use case for machine learning. Many sophisticated security systems use facial detection software to identity humans who may be committing a crime or other offense. New advancements in artificial intelligence are trying to incorporate facial recognition into their robots to increase their capabilities for communicating with humans. Facial recognition lays the foundations for more advanced actions such as emotion detection, eye-contact, and facing active speakers. I developed code that is able to accurately indentify human faces, even amidst noisy backgrouds. The process is outlined below:
+
+1. Set session variables
+   - Open the terminal and create a variable with `export DEMO_FILES="$HOME/demo_files"`
+2. Download models to be used for training and testing
+   - You are welcome to find your own models. This is strongly advised, as different models have different strengths and weaknesses.
+   - There are default models that can be used by running the following:
+      - `wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/mobilenet_v2_1.0_224_quant_edgetpu.tflite`
+      - `wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/imagenet_labels.txt`
+      - `wget -P ${DEMO_FILES}/ https://github.com/google-coral/edgetpu/raw/master/test_data/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite`
+3. Gather peripherals
+   - I used a monitor with an HDMI input, USB hub, USB camera, mouse, and keyboard
+   ![](etc/camsetup.jpeg)
+4. Fetch camera specs
+   - In the terminal enter `v4l2-ctl --list-formats-ext --device /dev/video1` to fetch the specs for your camera.
+      - This should return a page similar to below (exact results vary by webcam used):
+   ![](etc/cam_specs.png)
+   - Take note of the Pixel Format, Size, and FPS values. Depending on the model you develop, you may need to pass those into the model arguments.
+5. Classifying
+   - I called the script and passed in arguments
+   ![](etc/facial_script_call.png)
