@@ -72,3 +72,12 @@ Facial recognition is an increasingly popular use case for machine learning. Man
 5. Classifying
    - I called the script and passed in arguments
    ![](etc/facial_script_call.png)
+6. Results
+    - The results were great. My software was able to detect my face amidst a very noisy background in rather poor lighting. Images of the results are shown below:
+    ![](etc/facial1.jpeg)
+    ![](etc/facial2.jpeg)
+    ![](etc/facial3.jpeg)
+    ![](etc/facial4.jpeg)
+7. Conclusions
+   - I noticed that the classifier did better in more "optimal" conditions, which includes factors such as proper lighting, minimal image noise, and high contrast background/foreground.
+   - Another factor that increased classifier accuracy was distance and orientation towards the camera. Being closer to the camera yielded better results, and tilting your face in different angles or having it too high above or below the camera's plane would decrease accuracy.
