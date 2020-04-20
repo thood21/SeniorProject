@@ -1,3 +1,4 @@
+![](../etc/equipment1.PNG)
 # Getting Familiar with the Coral Dev Board
 Before diving in with the Coral Dev Board, I will first outline a short guide for setting up and running a demo. If you are are already familiar with the Coral Dev Board then this **is not needed**, however, this is still an excellent chance to become more familiar with the Coral Dev Board and it's capabilities.
 
