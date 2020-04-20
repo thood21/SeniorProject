@@ -5,7 +5,7 @@ Below I have incuded video demonstrations of the software in action. There are d
 This is a quick video demonstration of the facial recognition software. As you can see, the software detects faces well and the model updates its accuracy in real-time. This is seen with how the accuracy increases/decreases as I move around. 
 
    ![](../etc/videos/facial_classifier_demo.mov)
-   - The model has an inference time of ~10-12 milliseconds
+   - The model has an inference time of `~10-12 milliseconds`
    - Notice how the model returns lower accuracy results from frames with high movement or noisy backgrounds.
    - The box around my face (ie the facial detection) moves with me as I move my head around.
    - Performance:
@@ -19,7 +19,7 @@ The below videos are a few short demonstrations of the object classifier. This s
 
 #### Tennis Shoe Classification
    ![](../etc/videos/shoe_classifier_demo.mov)
-   - The model has an inference time of ~6.8 milliseconds
+   - The model has an inference time of `~6.8 milliseconds`
    - The model struggles to correctly classify my shoe. The closest result is `Sandal` with an acuracy of up to `0.70%`
    - Top results:
       - `Sombrerro   (5.1%)`
@@ -33,7 +33,7 @@ The below videos are a few short demonstrations of the object classifier. This s
       
 #### Computer Mouse Classification
    ![](../etc/videos/mouse_classifier_demo.mov)
-   - The model has an inference time of ~10 milliseconds
+   - The model has an inference time of `~10 milliseconds`
    - The model *is* able to correctly classify the computer mouse rather well. It reports `Mouse, Computer Mouse` with an accuracy of up to `9.8%`.
    - Top results:
       - `Mouse, Computer Mouse   (9.8%)`
@@ -51,7 +51,7 @@ The below videos are a few short demonstrations of the object classifier. This s
       
 #### Self & Noisy Background Classification
    ![](../etc/videos/self_classifier_demo.mov)
-   - The model has an inference time of ~12-18 milliseconds
+   - The model has an inference time of `~12-18 milliseconds`
    - The model struggles to correctly classify anything. Because there are so many objects captured in the video stream, the classifier jumps all over the place. 
    - Top results:
       - `Laptop, Laptop Computer   (2.18%)`
