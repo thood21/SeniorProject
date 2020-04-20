@@ -1,5 +1,5 @@
-# Senior Project: Coral Dev Board Real-time Edge Analytics of Human Pose and Face
-Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge analytics on human pose and face recognition and detection.
+# Senior Project: Real-time Edge-powered Facial Recognition and Object Detection
+Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge-analytics for facial recognition and object detection. 
 
 ## Project Information
 Below is a quick outline of relevant information for the project.
