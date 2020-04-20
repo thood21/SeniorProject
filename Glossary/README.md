@@ -1,4 +1,5 @@
 # Glossary
+![](../etc/machinelearning.png)
 This is a collection of definitions and explanations for jargon, libraries, and methodologies that are commonly used in this project. This would be useful to read over before beginning, or even using as a reference during your own project.
 
 
