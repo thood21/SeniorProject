@@ -49,8 +49,7 @@ Before I began working on the code for facial recognition, I wanted to begin wit
    - The results from the classification were a successful. The model correctly identified the bird with over 75% accuracy!
    ![](etc/model_results.png)
 
-
-### Facial Recognition
+#### Facial Recognition
 Facial recognition is an increasingly popular use case for machine learning. Many sophisticated security systems use facial detection software to identity humans who may be committing a crime or other offense. New advancements in artificial intelligence are trying to incorporate facial recognition into their robots to increase their capabilities for communicating with humans. Facial recognition lays the foundations for more advanced actions such as emotion detection, eye-contact, and facing active speakers. I developed code that is able to accurately indentify human faces, even amidst noisy backgrouds. The process is outlined below:
 
 1. Set session variables
@@ -81,3 +80,9 @@ Facial recognition is an increasingly popular use case for machine learning. Man
 7. Conclusions
    - I noticed that the classifier did better in more "optimal" conditions, which includes factors such as proper lighting, minimal image noise, and high contrast background/foreground.
    - Another factor that increased classifier accuracy was distance and orientation towards the camera. Being closer to the camera yielded better results, and tilting your face in different angles or having it too high above or below the camera's plane would decrease accuracy.
+
+#### Object Classifier
+
+
+#### Video Demonstrations
+For demonstration purposes, I have incuded pre-recorded videos of me using software. There are demos for both the facial recognition software as well as the object classifier. The Coral Dev Board does not have any sort of screen recording software, so all captures are done externally with my cell phone. Videos can be watched [here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos).
