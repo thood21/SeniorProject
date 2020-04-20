@@ -85,4 +85,4 @@ Facial recognition is an increasingly popular use case for machine learning. Man
 
 
 #### Video Demonstrations
-[here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos)
+For demonstration purposes, I have incuded pre-recorded videos of me using software. There are demos for both the facial recognition software as well as the object classifier. The Coral Dev Board does not have any sort of screen recording software, so all captures are done externally with my cell phone. Videos can be watched [here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos).
