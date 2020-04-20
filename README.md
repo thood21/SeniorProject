@@ -41,7 +41,7 @@ Before I began working on the code for facial recognition, I wanted to begin wit
    - Using the API, I developed a model that could classify various birds.
 4. My bird model
    - The code for my model is contained in `classify_bird.py`
-      - You can view the code [here](https://github.com/thood21/SeniorProject/blob/master/BirdClassification/classify_bird.py)
+      - You can view the code [here](https://github.com/thood21/SeniorProject/blob/master/Code/BirdClassification/classify_bird.py)
    - I began with an input image of a parrot, specifically a Scarlet Macaw.
    ![](etc/parrot.png)
    - I then called my script to begin classifying the image. The script takes in 3 arguments: `model`, `labels`, and `input`.
@@ -80,9 +80,31 @@ Facial recognition is an increasingly popular use case for machine learning. Man
 7. Conclusions
    - I noticed that the classifier did better in more "optimal" conditions, which includes factors such as proper lighting, minimal image noise, and high contrast background/foreground.
    - Another factor that increased classifier accuracy was distance and orientation towards the camera. Being closer to the camera yielded better results, and tilting your face in different angles or having it too high above or below the camera's plane would decrease accuracy.
+   - The code for this project is available [here](https://github.com/thood21/SeniorProject/blob/master/Code/FacialRecognition.py)
 
 #### Object Classifier
+Creating accurate machine learning models capable of localizing and identifying multiple objects in a single image remains a core challenge in computer vision. The TensorFlow Object Detection API is an open source framework built on top of TensorFlow that makes it easy to construct, train and deploy object detection models. This library was constructed by and is currently maintained by Google. 
 
-
+   1. This software uses several pre-existing modules such as `TensorFlow` and `NumPy` as well as special libraries for object
+   detection such as `object_detection.utils`
+      - TensorFlow Object Detection API has many dependencies, listed below:
+      Tensorflow Object Detection API depends on the following libraries:
+         - `Protobuf 3.0.0`
+         - `Python-tk`
+         - `Pillow 1.0`
+         - `lxml`
+         - `tf Slim`
+         - `Matplotlib`
+         - `Cython`
+         - `contextlib2`
+         - `cocoapi `
+      - For detailed steps to install Tensorflow, follow the [Tensorflow installation instructions](https://www.tensorflow.org/install/).; however a typical user can install Tensorflow using one of the following commands:
+         - For CPU:
+            - pip install tensorflow
+         - For GPU:
+            - pip install tensorflow-gpu
+   2. Now you will need to create your own model for classification. When creating a model there are a plethora of things to consider, so I would recommend reading documentation on [defining your own model architecture](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/defining_your_own_model.md).
+      - My code for the classifier can be found [here](https://github.com/thood21/SeniorProject/blob/master/Code/ObjectClassifier.py).
+      
 #### Video Demonstrations
 For demonstration purposes, I have incuded pre-recorded videos of me using software. There are demos for both the facial recognition software as well as the object classifier. The Coral Dev Board does not have any sort of screen recording software, so all captures are done externally with my cell phone. Videos can be watched [here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos).
