@@ -87,8 +87,7 @@ Creating accurate machine learning models capable of localizing and identifying 
 
    1. This software uses several pre-existing modules such as `TensorFlow` and `NumPy` as well as special libraries for object
    detection such as `object_detection.utils`
-      - TensorFlow Object Detection API has many dependencies, listed below:
-      Tensorflow Object Detection API depends on the following libraries:
+      - TensorFlow Object Detection API depends on the following libraries:
          - `Protobuf 3.0.0`
          - `Python-tk`
          - `Pillow 1.0`
