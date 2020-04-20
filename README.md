@@ -19,6 +19,9 @@ Below is a list of other documents that are to be included in the final project/
    * You can find the *Summaries & Critiques* [here](https://github.com/thood21/SeniorProject/tree/master/Summaries%26Critiques)
 * Annotated Bibliography
    * You can find the *Annotated Bibliography* [here](https://github.com/thood21/SeniorProject/tree/master/AnnotatedBibliography)
+* Glossary
+   * This is a collection of definitions and explanations for commonly used jargon and libraries in this project.
+   * You can find the *Glossary* [here](https://github.com/thood21/SeniorProject/tree/master/Glossary)
 * Getting Familiar with the Coral Dev Board
    * This is useful for those who have never worked with the Coral Dev Board before. This includes a guide for setting up and running a demo.
    * You can find the *documentation* [here](https://github.com/thood21/SeniorProject/tree/master/GettingFamiliarWithCoral)
