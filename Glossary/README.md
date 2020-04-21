@@ -10,6 +10,7 @@ This is a collection of definitions and explanations for jargon, libraries, and 
    - **Detection:** The ability for a prediction-based or classification-based model to correctly identify or otherwise recognize an input.
    - **Machine Learning:** The study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence. 
    - **Model:** A descriptive diagram of relationships between various types of information that are to be stored in a data collection system, or, in programming language, created as an object that can be referenced later.
+   - **Noise:** Image noise is random variation of brightness or color information in images, and is usually an aspect of electronic noise. Busy backgrounds typically produce large amounts of noise in images.
    - **Prediction:** The ability to infer an unknown future value given historic and/or current data. Prediction is used often in various analysis such as time-series and forecasting.
    - **Tensor:** Within the realm of mathematics, this is an object that describes a relationship between various sets of algebraic objects that are related to a vector space. Within the realm of TensorFlow, a tensor is a generalization of vectors and matrices to potentially higher dimensions. Internally, TensorFlow represents tensors as n-dimensional arrays of base datatypes.
 
