@@ -1,5 +1,5 @@
-# Senior Project: Real-time Edge-powered Facial Recognition and Object Detection
-Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge-analytics for facial recognition and object detection. 
+# Senior Project: Real-time Edge-powered Facial Recognition and Object Classification
+Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge-analytics for facial recognition and object classification. This project contains Python code that runs on the Coral Dev Board to stream in video or photos and process them extremely fast, thus enabling real-time analytics. In the case of facial recognition, the software will stream in video and search for what it believes to be a human face and then draw a box around it, along with the model's accuracy. The object classification streams in video and attempts to classify the objects it detects in the stream.
 
 ## Project Information
 Below is a quick outline of relevant information for the project.
@@ -11,7 +11,7 @@ Below is a quick outline of relevant information for the project.
 * Semester: Spring 2020
 
 #### Goals of Project
-This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time human pose and face recognition. The Coral Dev Board will be using an attached camera to stream in video data and use real-time analytics to estimate and gauge poses and faces. Because this device is both sensing/collecting and analyzing data it is considered an edge analytics device. 
+This project sets out with the goal to develop scripts using Python and TensorFlow on a portable Coral Dev Board. Specifically, these scripts will be used for real-time facial detection and object classification. The Coral Dev Board will be using an attached camera to stream in video data. Because this device is both sensing/collecting and analyzing data it is considered an edge analytics device. 
 
 #### Other Documents 
 Below is a list of other documents that are to be included in the final project/
@@ -27,7 +27,7 @@ Below is a list of other documents that are to be included in the final project/
    * You can find the *documentation* [here](https://github.com/thood21/SeniorProject/tree/master/GettingFamiliarWithCoral)
    
 ## My Project
-The below sections are pertinent to my own senior project, which is using the Coral Dev Board and TensorFlow lite to run software to detect human pose and faces
+The below sections are pertinent to my own senior project, which is using the Coral Dev Board and TensorFlow lite
 
 #### Warm-Up: Image Processing
 Before I began working on the code for facial recognition, I wanted to begin with a more basic form of image processing and recognition. I found a guide to help me build a model for classifying birds using the Coral Dev Board and TensorFlow lite Python API. My process is outlined below:
