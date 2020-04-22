@@ -109,4 +109,4 @@ Creating accurate machine learning models capable of localizing and identifying 
       - My code for the classifier can be found [here](https://github.com/thood21/SeniorProject/blob/master/Code/ObjectClassifier.py).
       
 #### Video Demonstrations
-For demonstration purposes, I have incuded pre-recorded videos of me using software. There are demos for both the facial recognition software as well as the object classifier. The Coral Dev Board does not have any sort of screen recording software, so all captures are done externally with my cell phone. Videos can be watched [here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos).
+For demonstration purposes, I have included pre-recorded videos of me using software. There are demos for both the facial recognition software as well as the object classifier. The Coral Dev Board does not have any sort of screen recording software, so all captures are done externally with my cell phone. Videos can be watched [here](https://github.com/thood21/SeniorProject/tree/master/VideoDemos).
