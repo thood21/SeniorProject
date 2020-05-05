@@ -1,6 +1,9 @@
 # Senior Project: Real-time Edge-powered Facial Recognition and Object Classification
 Senior Project using TensorFlow Lite on a Coral Dev Board to leverage edge-analytics for facial recognition and object classification. This project contains Python code that runs on the Coral Dev Board to stream in video or photos and process them extremely fast, thus enabling real-time analytics. In the case of facial recognition, the software will stream in video and search for what it believes to be a human face and then draw a box around it, along with the model's accuracy. The object classification streams in video and attempts to classify the objects it detects in the stream.
 
+#### Authors
+This project and repository was authored by Tom Hood, and co-authored and advised by Dr. Zahid Anwar (ZAnwar@Fontbonne.edu).
+
 ## Project Information
 Below is a quick outline of relevant information for the project.
 
